@@ -13,15 +13,6 @@ from io import BytesIO
 import warnings
 warnings.filterwarnings('ignore')
 
-# Check if Prophet is installed
-#try:
-   # from prophet import Prophet
-  # prophet_available = True
-#except ImportError:
-   # prophet_available = False
-   # st.warning("El módulo Prophet no está instalado. Instálalo con `pip install prophet` para usar este modelo. Continuando con Holt-Winters, ARIMA y SARIMA.")
-
-
 
 # Configuración de la página de Streamlit
 st.set_page_config(page_title="Simulador Estratégico Norky's", layout="wide")
@@ -31,6 +22,15 @@ Bienvenidos al simulador de forecasting para Norky's. Esta herramienta permite p
 evaluar modelos y tomar decisiones estratégicas. Explora los resultados y discute con tu equipo: 
 **¿Qué modelo es más adecuado? ¿Cómo impactan los pronósticos en la gestión de inventarios o promociones?**
 """)
+# Check if Prophet is installed
+try:
+    from prophet import Prophet
+    prophet_available = True
+except ImportError:
+    prophet_available = False
+    st.warning("El módulo Prophet no está instalado. Instálalo con `pip install prophet` para usar este modelo. Continuando con Holt-Winters, ARIMA y SARIMA.")
+
+
 # Parámetros del negocio
 PRECIO_POLLO_CRUDO = 12  # Soles por pollo (mayorista 2024)
 TICKET_PROMEDIO = 32.47  # Soles por venta promedio (actualizado según dataset)
