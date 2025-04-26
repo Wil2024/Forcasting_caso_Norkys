@@ -260,7 +260,7 @@ if uploaded_file:
             2. ¿Cómo usarías el pronóstico para gestionar inventarios de pollos?
             3. ¿Qué factores externos (festivos, economía) podrían afectar los resultados?
             4. ¿Cómo ajustarías las promociones basándote en los intervalos de confianza?
-            5. ¿Por qué ARIMA y SARIMA podrían dar resultados diferentes? ¿Cuándo usar cada uno?
+            5. ¿Por qué ARIMA, SARIMA, Holt-Winters y Prophet podrían dar resultados diferentes? ¿Cuándo usar cada uno?
             """)
 
         except Exception as e:
