@@ -62,7 +62,7 @@ def calcular_kpis(real, pronostico):
 
 # Carga de datos
 st.subheader("📂 Carga de Datos")
-uploaded_file = st.file_uploader("Sube el dataset de Norky's (Excel)", type=["xlsx"])
+uploaded_file = st.file_uploader("Sube el dataset de tu empresa (Excel)", type=["xlsx"])
 if uploaded_file:
     try:
         data = pd.read_excel(uploaded_file, parse_dates=['Fecha'])
