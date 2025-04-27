@@ -15,8 +15,8 @@ warnings.filterwarnings('ignore')
 
 
 # Configuración de la página de Streamlit
-st.set_page_config(page_title="Simulador Estratégico Norky's", layout="wide")
-st.title("🔮 Pronóstico de Ventas - Norky's (2025-2026)")
+st.set_page_config(page_title="Simulador Estratégico Empresarial", layout="wide")
+st.title("🔮 Pronóstico de Ventas (2025-2026)")
 st.markdown("""
 Bienvenidos al simulador de forecasting para Norky's. Esta herramienta permite pronosticar ventas en soles y unidades, 
 evaluar modelos y tomar decisiones estratégicas. Explora los resultados y discute con tu equipo: 
