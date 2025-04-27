@@ -18,7 +18,7 @@ warnings.filterwarnings('ignore')
 st.set_page_config(page_title="Simulador Estratégico Empresarial", layout="wide")
 st.title("🔮 Pronóstico de Ventas (2025-2026)")
 st.markdown("""
-Bienvenidos al simulador de forecasting para Norky's. Esta herramienta permite pronosticar ventas en soles y unidades, 
+Bienvenidos al simulador de forecasting para empresas. Esta herramienta permite pronosticar ventas en soles y unidades, 
 evaluar modelos y tomar decisiones estratégicas. Explora los resultados y discute con tu equipo: 
 **¿Qué modelo es más adecuado? ¿Cómo impactan los pronósticos en la gestión de inventarios o promociones?**
 """)
